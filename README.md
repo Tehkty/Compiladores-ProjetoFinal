@@ -73,7 +73,7 @@ src/symbol_table.cpp \
 
 
 ## Uso de Inteligência Artificial
-Durante o desenvolvimento deste projeto foram utilizadas ferramentas de Inteligência Artificial como apoio para:
+Durante o desenvolvimento deste projeto foram utilizadas ferramentas de Inteligência Artificial (Gemini e Chat GPT) como apoio para:
 
 Estruturação inicial do projeto;
 Revisão do código-fonte;
