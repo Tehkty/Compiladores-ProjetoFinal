@@ -44,40 +44,57 @@ tests/
 └── pidigits.pas
 ```
 
-## Compilação
-Instalação das dependências:
-
-```bash
-sudo apt install flex bison llvm clang gcc g++ make nasm
-```
-
-Compilação do projeto:
-
-```bash
+##Compilação do Compilador
+Acesse a pasta do projeto:
+cd mini-pascal-compiler
+Compile o compilador:
 make
-```
 
-## Execução
+Durante a compilação serão executadas as seguintes etapas:
 
-Exemplo de execução:
+# Gerar o parser com Bison
+bison -d -o build/parser.cpp src/parser.y
+Gerar o analisador léxico com Flex
+flex -o build/lexer.cpp src/lexer.l
+# Compilar os arquivos C++
+g++ -std=c++17 -Wall -Wextra -g \
+-Isrc \
+-Ibuild \
+build/parser.cpp \
+build/lexer.cpp \
+src/main.cpp \
+src/ast.cpp \
+src/codegen.cpp \
+src/symbol_table.cpp \
+-o minipascal
 
-```bash
-./minipascal tests/fibonacci.pas
-```
+Após a compilação será gerado o executável:
+./minipascal
+
+## Uso de Inteligência Artificial
+
+Durante o desenvolvimento deste projeto foram utilizadas ferramentas de Inteligência Artificial como apoio para:
+
+Estruturação inicial do projeto;
+Revisão do código-fonte;
+Organização do Makefile;
+Sugestões de gramática Flex/Bison;
+Revisão da documentação.
+
 
 ## Programas de Teste
 Foram utilizados os seguintes programas para validação do compilador:
 
-### factor.pas
+factor.pas
 Realiza a fatoração prima de um número inteiro.
 
-### isprime.pas
+isprime.pas
 Verifica se um número é primo.
 
-### fibonacci.pas
+fibonacci.pas
 Calcula um termo da sequência de Fibonacci.
 
-### pidigits.pas
+pidigits.pas
 Imprime os primeiros dígitos de π.
 
 ## Tratamento de Erros
