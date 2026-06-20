@@ -87,15 +87,19 @@ Foram utilizados os seguintes programas para validação do compilador:
 
 factor.pas
 Realiza a fatoração prima de um número inteiro.
+<img width="1275" height="214" alt="image" src="https://github.com/user-attachments/assets/11d4011c-1e16-4958-b539-6345ab805c6e" />
 
 isprime.pas
 Verifica se um número é primo.
+<img width="1260" height="363" alt="image" src="https://github.com/user-attachments/assets/592ae942-5a3b-4175-a877-7c972929a06f" />
 
 fibonacci.pas
 Calcula um termo da sequência de Fibonacci.
+<img width="1249" height="209" alt="image" src="https://github.com/user-attachments/assets/81a2abf8-4ed5-4158-9703-493737258533" />
 
 pidigits.pas
 Imprime os primeiros dígitos de π.
+<img width="1837" height="253" alt="image" src="https://github.com/user-attachments/assets/d6d4685a-793c-40cb-ab40-04e4ac86475a" />
 
 ## Tratamento de Erros
 O compilador realiza verificações léxicas, sintáticas e semânticas básicas, apresentando mensagens de erro para auxiliar na identificação de problemas no código-fonte.
