@@ -44,7 +44,7 @@ tests/
 └── pidigits.pas
 ```
 
-##Compilação do Compilador
+## Compilação do Compilador
 Acesse a pasta do projeto:
 cd mini-pascal-compiler
 Compile o compilador:
@@ -52,11 +52,11 @@ make
 
 Durante a compilação serão executadas as seguintes etapas:
 
-# Gerar o parser com Bison
+* Gerar o parser com Bison
 bison -d -o build/parser.cpp src/parser.y
 Gerar o analisador léxico com Flex
 flex -o build/lexer.cpp src/lexer.l
-# Compilar os arquivos C++
+* Compilar os arquivos C++
 g++ -std=c++17 -Wall -Wextra -g \
 -Isrc \
 -Ibuild \
@@ -68,11 +68,11 @@ src/codegen.cpp \
 src/symbol_table.cpp \
 -o minipascal
 
-Após a compilação será gerado o executável:
+* Após a compilação será gerado o executável:
 ./minipascal
 
-## Uso de Inteligência Artificial
 
+## Uso de Inteligência Artificial
 Durante o desenvolvimento deste projeto foram utilizadas ferramentas de Inteligência Artificial como apoio para:
 
 Estruturação inicial do projeto;
